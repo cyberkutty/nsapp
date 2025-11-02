@@ -25,11 +25,11 @@ SECRET_KEY = 'django-insecure-z8=fs&3kitpbq10vrniau^&pi6^mqw7mgp=_s^v&=sd6azg)x1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [#]
 
 
 
-ALLOWED_HOSTS = ['https://tvm.tamilansmm.com', 'www.tvm.tamilansmm.com']
+# ALLOWED_HOSTS = ['https://tvm.tamilansmm.com', 'www.tvm.tamilansmm.com']
 
 
 # Application definition
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
      'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
